@@ -23,7 +23,7 @@ Note: This repository includes the [postman collection for the API](postman_coll
 
 # Deployment
 
-This app is deployed on render https://codematic.onrender.com
+This app is deployed on railway because of the redis server https://codematicore-production-8a2d.up.railway.app/
 
 # Documentation
 
