@@ -27,7 +27,7 @@ export async function getCommentsHandler(req: Request, res: Response) {
     const comments = await findCommentByMovieId(id);
 
     if (comments.length === 0) {
-      return res.status(404).json({ message: `No comments for movie ${id}` });
+      return res.status(404).json({ message: `No comments for movie ${id}`, data: comments});
     }
     
     res.status(200).json({ message: `Comments for movie ${id}`, data: comments });
