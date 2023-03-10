@@ -2,7 +2,7 @@ import axios from "axios";
 import config from "config";
 
 
-export async function fetchAllVideos() {
+export async function fetchAllMovies() {
   const baseUrl = config.get<string>("swapi.base_url");
 
   try {

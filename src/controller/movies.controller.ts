@@ -1,6 +1,6 @@
 
 import { Request, Response } from "express";
-import { fetchAllVideos} from "../service/movies.service";
+import { fetchAllMovies} from "../service/movies.service";
 import { CommentModel } from "../model/comments.model";
 import { getOrSetCache } from "../utils/redis";
 import { number } from "zod";
@@ -16,13 +16,16 @@ interface Movie {
   
  try {
     const response = (await getOrSetCache("movies", async () => {
-    const data = await fetchAllVideos();
+    const data = await fetchAllMovies();
     return data;
-  }))
+    })) as { data: { results: Movie[] } };
+   
     const movies: Movie[] = response?.data.results;
    
    // Sort movies by release date
-   movies.sort((a, b) => new Date(a.release_date) - new Date(b.release_date));
+movies.sort((a: { release_date: string }, b: { release_date: string }) => {
+  return new Date(a.release_date).getTime() - new Date(b.release_date).getTime();
+});
 
    const moviesData = movies.map(async (movie) => {
       const { title, release_date, episode_id } = movie;
