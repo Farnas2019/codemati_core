@@ -2,6 +2,18 @@
 
 Note: This repository includes the [postman collection for the API](postman_collection.json)
 
+# Description
+
+This API Does The following
+
+- Get list of Films.
+  - Each film contains the id, title, release date and comment count. And the data was gotten from https://swapi.dev/api/films
+  - All the Films were sorted in ascending order by release date.
+  - Comment can be Added to a film
+  - Comment length was limited to 500 characters
+  - You can Get a list of comments for a film.
+  - Comments were in ascending order of when they were created.
+
 ## What you will need
 
 - A running instance of MongoDB
