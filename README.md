@@ -27,4 +27,4 @@ This app is deployed on railway because of the redis server https://codematicore
 
 # Documentation
 
-[The postman Documentation is](https://documenter.getpostman.com/view/24158326/2s93JtP31j)
+[The postman Documentation is here](https://documenter.getpostman.com/view/24158326/2s93JtP31j)
