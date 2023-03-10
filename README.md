@@ -1,4 +1,4 @@
-# Build a REST API with Node.js, Mongoose & TypeScript
+# CODEMATIC TEST REST API with Node.js, Mongoose & TypeScript
 
 Note: This repository includes the [postman collection for the API](postman_collection.json)
 
@@ -18,6 +18,7 @@ Note: This repository includes the [postman collection for the API](postman_coll
 - MongoDB with Mongoose
 - TypeScript
 - Express.js & Express.js middleware
+- Redis Server
 - Zod validation
 
 # Deployment
