@@ -3,6 +3,7 @@ import { Request, Response } from "express";
 import { fetchAllVideos} from "../service/movies.service";
 import { CommentModel } from "../model/comments.model";
 import { getOrSetCache } from "../utils/redis";
+import { number } from "zod";
 
 export async function findVideosHandler(_: Request, res: Response) {
 

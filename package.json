@@ -5,7 +5,8 @@
   "author": "Nasiruddeen Farhan",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --exit-child --transpile-only src/main.ts"
+    "dev": "tsnd --exit-child --transpile-only src/main.ts",
+    "build": "tsc"
   },
   "dependencies": {
     "@mantine/form": "^4.1.2",
