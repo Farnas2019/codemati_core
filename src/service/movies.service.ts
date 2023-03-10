@@ -3,7 +3,7 @@ import config from "config";
 
 
 export async function fetchAllMovies() {
-  const baseUrl = config.get<string>("swapi.base_url");
+  const baseUrl = config.get<string>("SWAPI.base_url");
 
   try {
     const response = await axios.get(`${baseUrl}/films`, {
